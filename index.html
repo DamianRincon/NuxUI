@@ -21,6 +21,9 @@
 		.text {
 			color: #212121;
 		}
+		.collection-item{
+			color: #455a64 !important;
+		}
 	</style>
 </head>
 <body>
@@ -53,14 +56,55 @@
 				</div>
 			</div>
 		</div>
+		<div class="section">
+			<ul class="collapsible">
+				<li>
+					<div class="collapsible-header"><i class="material-icons">call_to_action</i>Bottom Navigator Bar</div>
+					<div class="collapsible-body">
+						<div class="collection">
+							<a target="_blank" href="#!" class="collection-item waves-effect waves-red">Default</a>
+							<a target="_blank" href="#!" class="collection-item waves-effect waves-red">Titled</a>
+							<a target="_blank" href="https://github.com/westdabestdb/bubble_bottom_bar" class="collection-item waves-effect waves-red">Bubble</a>
+							<a target="_blank" href="#!" class="collection-item waves-effect waves-red">Custom Animation Fab</a>
+						</div>				
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header"><i class="material-icons">dashboard</i>Dashboard</div>
+					<div class="collapsible-body">
+						<div class="collection">
+							<a target="_blank" href="#!" class="collection-item waves-effect waves-red">Example 1</a>
+							<a target="_blank" href="#!" class="collection-item waves-effect waves-red">Example 2</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header"><i class="material-icons">touch_app</i>Buttons</div>
+				  	<div class="collapsible-body">
+						<div class="collection">
+							<a target="_blank" href="#!" class="collection-item waves-effect waves-red">Speed Dial</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header"><i class="material-icons">apps</i>Sample Apps</div>
+				  	<div class="collapsible-body">
+						<div class="collection">
+							<a target="_blank" href="https://github.com/DamianRincon/Flutter-Calculator" class="collection-item waves-effect waves-red">Material Calculator</a>
+							<a target="_blank" href="#!" class="collection-item waves-effect waves-red">Flutter Calculator</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
 	</main>
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script>
 		document.addEventListener('DOMContentLoaded', function() {
-			var elems = document.querySelectorAll('.tooltipped');
-			var instances = M.Tooltip.init(elems);
-  });
+			M.Tooltip.init(document.querySelectorAll('.tooltipped'));
+			M.Collapsible.init(document.querySelectorAll('.collapsible'));
+  		});
 	</script>
 </body>
 </html>
