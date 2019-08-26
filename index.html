@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<!--Let browser know website is optimized for mobile-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<!-- Canonical SEO -->
+	<link rel="canonical" href="https://damianrincon@github.io/NuxUI/">
+	<meta name="author" content="Damián Rincón Cañaveral" />
+	<meta name="keywords" content="Flutter, Flutter Lib, Flutter Plugin, plugin, apps, mobile, mobile apps, android, android studio, ios, iphone, google, playstore">
+	<meta name="description" content="NuxUI is a plataform for Flutter Apps and Plugin.">
 	<title>NuxUI</title>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Product+Sans" rel="stylesheet" type="text/css" />
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<style>
+		a,p,span,h1,h2,h3,h4,h5{ font-family: Product Sans !important; color: #212121}
+		.text {
+			color: #212121;
+		}
+	</style>
 </head>
 <body>
-	
+	<header>
+		<div class="navbar-fixed">
+			<nav class="white">
+				<div class="nav-wrapper">
+					<a href="#!" class="brand-logo red-text accent-4" style="margin-left: 15px"> NuxUI</a>
+					<ul class="right hide-on-med-and-down">
+					  <li><a class="tooltipped" data-position="bottom" data-tooltip="Shared" href="#"><i class="material-icons text">share</i></a></li>
+					  <li><a class="tooltipped" data-position="bottom" data-tooltip="Download App" href="#"><i class="material-icons text">get_app</i></a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main class="container">
+		<div class="row">
+			<div class="col l12">
+				<div class="col l6 m6 s12">
+					LOGO
+				</div>
+				<div class="col l6 m6 s12">
+					<h3>NuxUI</h3>
+					<h5>Examples of UI & UX designs based on Material Design, made with Flutter.</h5>
+					<div class="right-align">
+						<a href="#"><img src="google-play-badge.png" alt="Google Play Download" width="50%"></a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			var elems = document.querySelectorAll('.tooltipped');
+			var instances = M.Tooltip.init(elems);
+  });
+	</script>
 </body>
 </html>
